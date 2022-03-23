@@ -17,7 +17,7 @@ function getChannelName(channel) {
   return channel.name;
 }
 
-console.log(getChannelName(channels[0]));
+//console.log(getChannelName(channels[0]));
 
 /**************************************************************
  * numberOfVideos(channel)
@@ -25,7 +25,7 @@ console.log(getChannelName(channels[0]));
  * - returns the number of videos that channel has
  ****************************************************************/
 function numberOfVideos(channel) {
-  // Your code here
+  return channel.videos.length;
 }
 // console.log(numberOfVideos(channels[0]))
 
