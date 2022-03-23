@@ -37,6 +37,7 @@ function numberOfVideos(channel) {
  * - returns false otherwise
  *
  * BONUS: use iteration method `.some()`
+ * //NOTE: vd.title because i want the TITLE of the OBJ not ARRAY->vid
  ****************************************************************/
 function channelHasVideo(videoTitle, channel) {
   return channel.videos.some(vd=> vd.title === videoTitle);
@@ -53,7 +54,11 @@ function channelHasVideo(videoTitle, channel) {
  * BONUS: use iteration method `.find()`
  ****************************************************************/
 function getChannelByName(channelName, channels) {
-  // Your code here
+  const val = channels.find(nm=> nm.name === channelName)
+  if(val){
+    return val;
+
+  }else return undefined;
 }
 // console.log(getChannelByName("PowerfulJRE", channels))
 
