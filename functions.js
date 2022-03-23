@@ -52,6 +52,8 @@ function channelHasVideo(videoTitle, channel) {
  * - returns the channel object with the same name as the channelName provided
  *
  * BONUS: use iteration method `.find()`
+ * filter is for ARRAY and find is for ANYTHING including OBJECTS
+ * this returns one element.
  ****************************************************************/
 function getChannelByName(channelName, channels) {
   const val = channels.find(nm=> nm.name === channelName)
@@ -71,7 +73,9 @@ function getChannelByName(channelName, channels) {
  * BONUS: use iteration methods `.find()` and `.some()`
  ****************************************************************/
 function getChannelByVideoTitle(videoTitle, channels) {
-  // Your code here
+  // YOU CAN DO THIS channels.find(channel=> channel.video.some())
+  return channels.find(channel=> channelHasVideo(videoTitle,channel));
+
 }
 // console.log(getChannelByVideoTitle("The Universal S", channels));
 
