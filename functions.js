@@ -39,7 +39,7 @@ function numberOfVideos(channel) {
  * BONUS: use iteration method `.some()`
  ****************************************************************/
 function channelHasVideo(videoTitle, channel) {
-  // Your code here
+  return channel.videos.some(vd=> vd.title === videoTitle);
 }
 // console.log(channelHasVideo("The Universal S", channels[0]));
 // console.log(channelHasVideo("The Universal S", channels[1]));
